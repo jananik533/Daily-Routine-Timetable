@@ -1,0 +1,52 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: hsla(184, 98%, 56%, 0.274);   /* light background */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    color: rgb(61, 53, 53);
+    margin-bottom: 30px;
+}
+
+.timeline {
+    display: flex;
+    flex-direction: column;   /* horizontal layout */
+    gap: 20px;
+    width: 320px;
+}
+
+.card {
+    border-radius: 100px;
+    padding: 50px;
+    text-align: center;
+    box-shadow: 2px 2px 6px #2c2a2ad7;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+/* Different background colors for each time block */
+.morning { background-color: #e0e407da; }       
+.late-morning { background-color: #fafad2; }  
+.afternoon { background-color: #673be0; }     
+.evening { background-color: #ce32ce; }       
+.night { background-color: #dcdcdc; }         
+/* Hover effect */
+.card:hover {
+    transform: scale(1.05);
+    background-color: #ffcdcd; /* highlight on hover */
+}
+
+.card h3 {
+    margin: 0;
+    color: #333;
+    font-size: 18px;
+}
+
+.card p {
+    margin: 5px 0;
+    color: #555;
+}
